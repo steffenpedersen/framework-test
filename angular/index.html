@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Angular</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body ng-app="app">
+
+	<div ng-controller="loop">
+	  <ul>
+	    <li ng-repeat="post in posts">
+	      <div class="picture" ng-style="background-image: url({{ post.picture }})"></div>
+	        <h2>{{ post.name }}</h2>
+	    </li>
+	  </ul>
+	</div>
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+  </script>
+</body>
+
+</html>
